@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html style="background:black">
+<html lang="ru">
 <head>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://unpkg.com/jquery.terminal@1.x.x/js/jquery.terminal.min.js"></script>
-<link href="https://unpkg.com/jquery.terminal@1.x.x/css/jquery.terminal.min.css" rel="stylesheet">
+    <title>FOnline: The Long Journey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css?v=1">
+    <link rel="icon" type="image/png" href="https://avatars1.githubusercontent.com/u/42187671" />
+    <meta name="theme-color" content="#000A00">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/uos.js"></script>
+    <script src="https://unpkg.com/jquery.terminal@1.x.x/js/jquery.terminal.min.js"></script>
+    <link href="https://unpkg.com/jquery.terminal@1.x.x/css/jquery.terminal.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
-<body>
-	<div id=terminal></div>
-	<script>
-		$(function() {
-		   $('#terminal').terminal({  },{greetings:"Stand by for updates"});
-		});
-	</script>
+<body onload="uos.boot();"><div id="bg"><div id="bg-line"></div></div>
+	<div id="buffer" hidden="true">
+		<div align="center">ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM<BR>COPYRIGHT 2075-2077 ROBCO INDUSTRIES<br>-Server 1-</div>
+		<hr>
+		<nav align="center">
+		    <a href="https://github.com/fonline-long-journey">FOnline: The Long Journey</a>
+		    <a href="https://discord.gg/JGvdDWp">Project Discord</a>
+		</nav>
+		<hr>	
+		<div id="ajax"></div>
+		<form id="terminal"><input value=""></input></form>
+	</div>
+	<div id="ui"></div>
 </body>
 </html>
